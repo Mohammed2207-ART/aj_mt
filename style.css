@@ -1,0 +1,131 @@
+:root{
+    --navy: rgb(5, 59, 80);
+    --blue: rgb(23, 107, 135);
+    --teal: rgb(100, 204, 197);
+    --grey: rgb(238, 238, 238);
+ 
+}
+body,h2{
+    margin: 0;
+    font-family: sans-serif;
+}
+.landing{
+    background-image: url('../media/back.jpg') ;
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     color: var(--grey);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--grey);
+
+}
+
+header{
+    display: flex;
+    padding: 1em;
+
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: blue;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+
+}
+.tagline1{
+    color: var(--navy);
+    font-size: 2.5em;
+    font-weight: bolder;
+
+}
+.tagline2{
+    color: var(--blue);
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em ;
+    background-color: var(--teal);
+    color: var(--grey);
+    border: 1px solid var(--navy);
+}
+.style{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(188px,1fr));
+    background: linear-gradient(to right,var(--teal),var(--blue));
+    color: var(--grey);
+}
+#menuheading,#locheading{
+    background: linear-gradient(to right,var(--teal),var(--blue));
+    font-size: 2.5em;
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+}
+.style th{
+    color:var(--navy);
+    font-size: 1.8em;
+    }
+table{
+    width: 100%;
+    padding: 1em;
+
+}
+.style tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.style td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.style td:nth-child(2){
+    justify-self: right;
+}
+.locations{
+    background: linear-gradient(to right,var(--teal),var(--blue));
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2{
+    color: var(--navy);
+    margin-bottom: .8em;
+
+}
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 169px; 
+
+}
